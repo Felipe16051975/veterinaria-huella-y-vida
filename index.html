@@ -1,0 +1,191 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Veterinaria Huella y Vida</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path d="M50 15c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM20 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM80 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM35 65c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM65 65c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="#4CAF50"/>
+        </svg>
+        <span>Huella y Vida</span>
+      </div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button id="registerBtn" class="register-btn">Registro</button></li>
+        <li><a href="appointments.html" class="cta-button">Agendar Cita</a></li>
+        <li><a href="https://wa.me/56965916117" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Cuidamos a tu mejor amigo</h1>
+        <p>Clínica veterinaria con los mejores profesionales y tecnología de vanguardia</p>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card" data-service="consulta">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Consultas</h3>
+          <p>Atención médica general y preventiva para tu mascota</p>
+        </div>
+        <div class="service-card" data-service="cirugia">
+          <i class="fas fa-surgical"></i>
+          <h3>Cirugías</h3>
+          <p>Procedimientos quirúrgicos con equipo especializado</p>
+        </div>
+        <div class="service-card" data-service="examenes">
+          <i class="fas fa-microscope"></i>
+          <h3>Exámenes</h3>
+          <p>Laboratorio clínico y diagnóstico por imagen</p>
+        </div>
+        <div class="service-card" data-service="peluqueria">
+          <i class="fas fa-cut"></i>
+          <h3>Peluquería</h3>
+          <p>Servicios de grooming y estética para mascotas</p>
+        </div>
+        <div class="service-card" data-service="especialidad">
+          <i class="fas fa-user-md"></i>
+          <h3>Especialidades</h3>
+          <p>Atención especializada para condiciones específicas</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="promociones" class="promotions">
+      <h2>Promociones y Novedades</h2>
+      <div class="promotions-grid">
+        <div class="promo-card">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Operativos Mensuales</h3>
+          <p>Participa en nuestras campañas de esterilización y vacunación a precios especiales</p>
+          <div class="promo-dates">Próximo operativo: 15 de cada mes</div>
+        </div>
+        <div class="promo-card">
+          <i class="fas fa-tags"></i>
+          <h3>Promociones Especiales</h3>
+          <p>Descuentos en servicios veterinarios para adultos mayores y familias numerosas</p>
+          <div class="promo-discount">20% de descuento</div>
+        </div>
+        <div class="promo-card">
+          <i class="fas fa-cube"></i>
+          <h3>Artículos 3D</h3>
+          <p>Descubre nuestra colección de figuras de mascotas impresas en 3D</p>
+          <div class="product-gallery">
+            <div class="product-item">
+              <div class="product-image">
+                <svg viewBox="0 0 100 100" class="pet-figure">
+                  <path d="M50,20 C30,20 25,35 25,50 C25,65 35,80 50,80 C65,80 75,65 75,50 C75,35 70,20 50,20" fill="#a5d6a7"/>
+                  <circle cx="40" cy="45" r="3" fill="#333"/>
+                  <circle cx="60" cy="45" r="3" fill="#333"/>
+                  <path d="M45,55 Q50,60 55,55" fill="none" stroke="#333" stroke-width="2"/>
+                </svg>
+              </div>
+              <span>Figura Personalizada</span>
+              <span class="price">Desde $15.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Información de Contacto</h2>
+      <div class="contact-container">
+        <div class="contact-info" style="width: 100%; max-width: 600px; margin: 0 auto;">
+          <h3>Información de Contacto</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Dirección: <a href="https://www.google.com/maps/search/?api=1&query=Consul+Eduardo+Llanos+8122+Lo+Prado+Santiago+Chile" target="_blank" style="color: var(--primary-color); text-decoration: none;">Consul Eduardo Llanos 8122, Lo Prado</a></p>
+          <p><i class="fas fa-phone"></i> Teléfono: +56 9 6591 6117</p>
+          <p><i class="fas fa-envelope"></i> Email: veterinariahuellayvida@gmail.com</p>
+          <div class="hours">
+            <h4>Horario de Atención</h4>
+            <p>Lunes a Viernes: 9:00 - 19:00</p>
+            <p>Sábados: 9:00 - 14:00</p>
+            <p>Domingos: Emergencias</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registro de Cliente</h2>
+      <p class="modal-description">Para agendar una cita, primero debes registrarte como cliente.</p>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="regName">Nombre completo:</label>
+          <input type="text" id="regName" name="regName" required>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email:</label>
+          <input type="email" id="regEmail" name="regEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="regPhone">Teléfono:</label>
+          <input type="tel" id="regPhone" name="regPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="regAddress">Dirección:</label>
+          <input type="text" id="regAddress" name="regAddress" required>
+        </div>
+        <div class="form-group">
+          <label for="petName">Nombre de la mascota:</label>
+          <input type="text" id="petName" name="petName" required>
+        </div>
+        <div class="form-group">
+          <label for="petType">Tipo de mascota:</label>
+          <select id="petType" name="petType" required>
+            <option value="">Seleccionar</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="petBirth">Fecha de nacimiento de la mascota:</label>
+          <input type="date" id="petBirth" name="petBirth" required>
+        </div>
+        <button type="submit" class="cta-button">Registrar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Huella y Vida</h4>
+        <p>Cuidando a tus mascotas con amor y profesionalismo</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Clínica Veterinaria Huella y Vida. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

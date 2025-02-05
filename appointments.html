@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Cita - Clínica Veterinaria Huella y Vida</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path d="M50 15c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM20 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM80 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM35 65c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zM65 65c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="#4CAF50"/>
+        </svg>
+        <span>Huella y Vida</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><button id="registerBtn" class="register-btn">Registro</button></li>
+        <li><a href="https://wa.me/56965916117" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section id="agendar" class="appointment">
+      <h2>Agenda tu Cita</h2>
+      <div class="appointment-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email (debe estar registrado):</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Servicio:</label>
+            <select id="service" name="service" required>
+              <option value="">Seleccione un servicio</option>
+              <option value="consulta">Consulta General</option>
+              <option value="cirugia">Cirugía</option>
+              <option value="examenes">Exámenes</option>
+              <option value="peluqueria">Peluquería</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Fecha preferida:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Hora preferida:</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje adicional:</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit" class="cta-button">Agendar Cita</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Registration Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registro de Cliente</h2>
+      <p class="modal-description">Para agendar una cita, primero debes registrarte como cliente.</p>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="regName">Nombre completo:</label>
+          <input type="text" id="regName" name="regName" required>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email:</label>
+          <input type="email" id="regEmail" name="regEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="regPhone">Teléfono:</label>
+          <input type="tel" id="regPhone" name="regPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="regAddress">Dirección:</label>
+          <input type="text" id="regAddress" name="regAddress" required>
+        </div>
+        <div class="form-group">
+          <label for="petName">Nombre de la mascota:</label>
+          <input type="text" id="petName" name="petName" required>
+        </div>
+        <div class="form-group">
+          <label for="petType">Tipo de mascota:</label>
+          <select id="petType" name="petType" required>
+            <option value="">Seleccionar</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="petBirth">Fecha de nacimiento de la mascota:</label>
+          <input type="date" id="petBirth" name="petBirth" required>
+        </div>
+        <button type="submit" class="cta-button">Registrar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Huella y Vida</h4>
+        <p>Cuidando a tus mascotas con amor y profesionalismo</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Clínica Veterinaria Huella y Vida. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
